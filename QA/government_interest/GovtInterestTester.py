@@ -157,9 +157,9 @@ FROM   `government_interest` gi
                             })
 
     def runTests(self):
-        super(GovtInterestTester, self).runTests()
         self.generate_govt_int_samples()
         self.save_qa_data()
+        super(GovtInterestTester, self).runTests()
 
 
 def begin_gi_test(config):
